@@ -5,14 +5,16 @@ import Link from "next/link";
 
 export function CallToAction() {
   return(
-    <section className="py-24 bg-linear-to-b from-cyan-950/20 to-gray-700">
-      <div className="container mx-auto">
+    <section className="relative py-24 bg-linear-to-b from-cyan-950/20 to-gray-700">
+      <div className="absolute inset-0 bg-[url('/background-footer.svg')] bg-cover bg-center bg-no-repeat opacity-90"/>
+        <div className="absolute -top-7 left-1/2 -translate-x-1/2 p-4 bg-cyan-300 w-fit rounded-full">
+          <Store className="text-cyan-100"/>
+        </div>
+
+      <div className="container mx-auto relative">
 
         <div className="flex flex-col items-center gap-6 text-center">
-          <div className="p-4 bg-cyan-300 w-fit rounded-full">
-            <Store className="text-cyan-100"/>
-          </div>
-          
+  
            <h2 
             className="font-sans text-gray-100 text-balance text-heading-xl"
            >
