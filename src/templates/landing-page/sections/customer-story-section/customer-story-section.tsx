@@ -32,7 +32,7 @@ export function CustomerStorySection() {
           {customerStories.map((customerStory) => (
 
             <div key={customerStory.author.name} className="flex flex-col gap-6 rounded-lg bg-gray-500 p-6 md:p-12">
-              <p className="text-balance  text-gray-200">{customerStory.content}</p>
+              <p className="text-balance italic  text-gray-200">{customerStory.content}</p>
               
               <div className="flex items-center gap-3">
                 <div className="relative h-10 w-10 overflow-hidden rounded-full">

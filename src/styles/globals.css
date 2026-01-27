@@ -2,56 +2,58 @@
 @import "tw-animate-css";
 
 
-@theme {
-  --color-white: #ffffff;
+@layer base {
+  :root {
+    --color-white: #ffffff;
 
-  --color-blue-100: #7ea4d7;
-  --color-blue-200: #2c85fc;
-  --color-blue-300: #2266c1;
-  --color-blue-400: #0d284c;
+    --color-blue-100: #7ea4d7;
+    --color-blue-200: #2c85fc;
+    --color-blue-300: #2266c1;
+    --color-blue-400: #0d284c;
 
-  --color-cyan-100: #2debfc;
-  --color-cyan-200: #187d86;
-  --color-cyan-300: #0e474c;
+    --color-cyan-100: #2debfc;
+    --color-cyan-200: #187d86;
+    --color-cyan-300: #0e474c;
 
-  --color-gray-100: #f9fafc;
-  --color-gray-200: #d3d5d9;
-  --color-gray-300: #93979f;
-  --color-gray-400: #20242c;
-  --color-gray-500: #16181d;
-  --color-gray-600: #14161a;
-  --color-gray-700: #101216;
-  --color-gray-800: #0b0c0f;
+    --color-gray-100: #f9fafc;
+    --color-gray-200: #d3d5d9;
+    --color-gray-300: #93979f;
+    --color-gray-400: #20242c;
+    --color-gray-500: #16181d;
+    --color-gray-600: #14161a;
+    --color-gray-700: #101216;
+    --color-gray-800: #0b0c0f;
 
-  /* border radius */
-  --radius-lg: 0.5rem;
-  --radius-md: calc(0.5rem - 2px);
-  --radius-sm: calc(0.5rem - 4px);
+    /* border radius */
+    --radius-lg: 0.5rem;
+    --radius-md: calc(0.5rem - 2px);
+    --radius-sm: calc(0.5rem - 4px);
 
-  /* fonts */
-  --font-sans: "PT Sans Caption", sans-serif;
-  --font-inter: "Inter", sans-serif;
+    /* fonts */
+    --font-sans: "PT Sans Caption", sans-serif;
+    --font-inter: "Inter", sans-serif;
 
-  /* font sizes */
-  --text-heading-hg: 40px;
-  --text-heading-xl: 32px;
-  --text-heading-lg: 28px;
-  --text-heading-md: 24px;
-  --text-heading-sm: 20px;
-  --text-heading-xs: 16px;
+    /* font sizes */
+    --text-heading-hg: 40px;
+    --text-heading-xl: 32px;
+    --text-heading-lg: 28px;
+    --text-heading-md: 24px;
+    --text-heading-sm: 20px;
+    --text-heading-xs: 16px;
 
-  --text-body-tag: 12px;
-  --text-body-md: 16px;
-  --text-body-sm: 14px;
-  --text-body-xs: 12px;
+    --text-body-tag: 12px;
+    --text-body-md: 16px;
+    --text-body-sm: 14px;
+    --text-body-xs: 12px;
 
-  --text-action-md: 16px;
-  --text-action-sm: 14px;
+    --text-action-md: 16px;
+    --text-action-sm: 14px;
+  }
 }
 
 /* === Utilities === */
 @layer utilities {
-  .page-container {
+  .container {
     width: 100%;
     max-width: 1200px;
     margin-inline: auto;
@@ -138,7 +140,6 @@
 
 /* === Base === */
 @layer base {
-  /* um “reset” leve sem depender de tokens shadcn */
   * {
     border-color: var(--color-gray-200);
   }

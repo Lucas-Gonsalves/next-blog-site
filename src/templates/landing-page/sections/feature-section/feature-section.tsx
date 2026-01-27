@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function FeatureSection() {
   return(
-    <section className="container bg-gray-700 grid grid-cols-1 gap-6 md:grid-cols-2 pb-8 pt-8 md:py-10 mx-auto">
+    <section className="container bg-gray-700 grid grid-cols-1 gap-6 md:grid-cols-2 pb-8 pt-8 md:py-10">
       <div className="container flex flex-col gap-4 rounded-lg p-6 bg-gray-500 md:p-12">
         <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">Simples</span>
         <h2 className="text-gray-100 text-heading-lg font-sans">Crie um catálogo de produtos online em poucos minutos</h2>
