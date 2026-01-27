@@ -8,7 +8,7 @@ export function FeatureSection() {
     <section className="container bg-gray-700 grid grid-cols-1 gap-6 md:grid-cols-2 pb-8 pt-8 md:py-10 mx-auto">
       <div className="container flex flex-col gap-4 rounded-lg p-6 bg-gray-500 md:p-12">
         <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">Simples</span>
-        <h2 className="text-gray-100 text-heading-lg">Crie um catálogo de produtos online em poucos minutos</h2>
+        <h2 className="text-gray-100 text-heading-lg font-sans">Crie um catálogo de produtos online em poucos minutos</h2>
       </div>
 
       <div className="flex flex-col gap-4 rounded-lg p-6 bg-gray-500 md:p-12">
@@ -20,7 +20,7 @@ export function FeatureSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-4 rounded-lg bg-gray-500 p-6 md:p-12">
           <div className="flex flex-col gap-4">
             <span className="text-body-tag text-blue-200 bg-blue-400 px-2 py-1 w-fit rounded-sm uppercase">Personalizável</span>
-            <h2 className="text-gray-100 text-heading-lg">Tenha uma loja online personalizada com a cara dee sua marca</h2>
+            <h2 className="text-gray-100 text-heading-lg font-sans">Tenha uma loja online personalizada com a cara dee sua marca</h2>
 
             <Button 
               asChild 

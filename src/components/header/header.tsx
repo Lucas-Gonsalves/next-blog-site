@@ -7,14 +7,14 @@ import { Logo } from "../logo";
 export function Header () {
 
   return (
-      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-gray-500/95 backdrop-blur supports-[backdrop-filter]:bg-gray-500/60">
+      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-gray-500/95 backdrop-blur supports-backdrop-filter:bg-gray-500/60">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <Logo/>
           
-          <nav className="flex items-center gap-6">
+          <nav className="flex items-center gap-6 font-inter">
             <ActiveLink href="/">Início</ActiveLink>
-            <ActiveLink href="/blog">Início</ActiveLink>
+            <ActiveLink href="/blog">Blog</ActiveLink>
             <Button variant="secondary" asChild>
               <Link href="/comecar">
                 Começar
