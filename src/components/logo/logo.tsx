@@ -12,6 +12,7 @@ export function Logo() {
         width={0}
         height={0}
         className="w-29 h-8"
+        loading="eager"
       />
     </Link>
   );

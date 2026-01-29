@@ -30,7 +30,7 @@ export function PostCard({
     >
       <div className="p-2 rounded-md overflow-hidden">
         <div className="relative">
-          <div className="absolute top-0 right-0 px-3 py-1 bg-gray-600 background-blur-sm rounded-bl-[10px]">
+          <div className="absolute top-0 right-0 pl-3 pr-1 flex items-center justify-center pb-1 bg-gray-600 background-blur-sm rounded-bl-[10px]">
             <span className="text-gray-300 text-body-xs">{ date }</span>
           </div>
 
@@ -39,7 +39,8 @@ export function PostCard({
             alt={title}
             width={288}
             height={144}
-            className="w-full h-40 object-cover object-center rounded-t-xl  "
+            loading="eager"
+            className="w-full h-40 object-cover object-center rounded-lg  "
           />
         </div>
 
@@ -52,7 +53,9 @@ export function PostCard({
               <Image
                 src={author?.avatar}
                 alt="Avatar do autor"
+                sizes="20px"
                 fill
+                loading="eager"
                 className="object-cover rouded-md"
               />
             </div>
