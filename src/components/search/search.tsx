@@ -3,6 +3,7 @@ import { CircleX, SearchIcon } from "lucide-react";
 import { useRouter } from "next/router";
 import { useCallback } from "react";
 
+
 export function Search() {
   const router = useRouter();
   const query = (router.query.q as string) ?? "";
