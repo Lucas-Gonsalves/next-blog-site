@@ -16,16 +16,12 @@ import { useShare } from "@/hooks";
 
 export default function PostPage() {
   const router = useRouter();
-  
   if (!router.isReady) return null;
-  
   const slug = router.query.slug as string;
-
   const post = allPosts.find(
-    (post) => post.slug.toLocaleLowerCase() === slug.toLocaleLowerCase()
+    (post) => post.slug.toLowerCase() === slug.toLowerCase()
   )!;
-
-  const publishedDate = new Date(post?.date ?? "").toLocaleDateString("pt-BR");
+  const publishedDate = new Date(post?.date).toLocaleDateString('pt-BR');
   const postUrl = `https://site.set/blog/${slug}`;
 
   const { shareButtons } = useShare({
@@ -33,7 +29,7 @@ export default function PostPage() {
     title: post.title,
     text: post.description,
   });
-  
+
   return (
     <main className="mt-32 mb-16 text-gray-100">
       <div className="container space-y-12 px-4 md:px-8">
@@ -91,20 +87,20 @@ export default function PostPage() {
           </article>
 
           <aside className="space-y-6">
-            <div className="rounded-lg bg-gray-700 p-4 md:p-6">
+            <div className="rounded-lg bg-gray-700">
               <h2 className="mb-4 text-headidng-xs text-gray-100">Compartilhar</h2>
               
-              <div className="space-y3">
-                {shareButtons.map((provider) => (
-                  <Button
-                    key={provider.provider}
-                    onClick={() => provider.action()}
-                    variant="outline"
-                    className="w-full justify-start gap-2"
-                  >
-                    { provider.icon }
-                    { provider.name }
-                  </Button>
+              <div className="space-y-3">
+                  {shareButtons.map((provider) => (
+                    <Button
+                      key={provider.provider}
+                      onClick={() => provider.action()}
+                      variant="outline"
+                      className="w-full justify-start gap-2"
+                    >
+                      {provider.icon}
+                      {provider.name}
+                    </Button>
                  ))}
               </div>
             </div>
