@@ -8,6 +8,8 @@ author:
   avatar: /customer-03-avatar.png
 ---
 
+# Teste de título
+
 Se você está buscando uma maneira simples e eficaz de vender seus produtos online, o Site.Set é a solução perfeita para você. 
 Criar uma loja virtual de sucesso nunca foi tão fácil. Com nossa plataforma intuitiva, você pode criar um site profissional 
 para sua loja em minutos, sem precisar de conhecimentos técnicos.
@@ -24,5 +26,10 @@ Veja o que nossa plataforma oferece:
 
 **Suporte especializado**: Nossa equipe de suporte está sempre disponível para ajudar você com qualquer dúvida ou desafio.
 
+[Link em markdown (clique para testar)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
 Está pronto para colocar seus produtos no mundo? Com o Site.Set, criar sua loja online é rápido, simples e acessível. 
+
+## Teste de subtítulo
+
 Desde a configuração do site até a finalização da compra, oferecemos todas as ferramentas necessárias para você vender com sucesso.
