@@ -14,7 +14,6 @@ export function LandingPage() {
       <FeatureSection/>
       <SupportSection/>
       <CustomerStorySection/>
-      <CallToAction/>
     </article>
   );
 };
