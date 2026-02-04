@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { BlogList } from "@/templates/blog/blog-list";
 import { allPosts } from "contentlayer/generated";
 
-
 export const metadata: Metadata = {
   title: "Blog",
   description: "Dicas e estratégias para impulsionar seu negócio",
